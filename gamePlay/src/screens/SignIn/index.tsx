@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, Image, StatusBar} from "react-native";
+import {View, Text, Image} from "react-native";
 import {styles} from './styles';
 import IllustrationImg from "../../assets/illustration.png"
 import { ButtomIcon } from "../../components/buttonIcon";
@@ -8,11 +8,7 @@ export  function SignIn(){
 
     return(
       <View style={styles.container}>
-          <StatusBar
-          barStyle="light-content"
-          backgroundColor="transparent"
-          translucent
-          />
+        
          <Image 
          source={IllustrationImg}
          style={styles.image}
@@ -20,9 +16,9 @@ export  function SignIn(){
          />
          <View style={styles.content}>
              <Text style={styles.title}> 
-                 Organize {'\n'} 
-                 suas jogatinas  {'\n'}
-                 facilmente
+                 Conecte-se {'\n'} 
+                   e organize seus  {'\n'}
+                 games
              </Text>
              <Text style={styles.subtitle}>
                  Crie grupos para jogar seus games {'\n'}
