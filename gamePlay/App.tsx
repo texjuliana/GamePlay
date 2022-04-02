@@ -5,7 +5,7 @@ import { Rajdhani_700Bold, Rajdhani_500Medium} from '@expo-google-fonts/rajdhani
 import AppLoading from 'expo-app-loading';
 
 import { Background} from './src/components/Background';
-import { Home  } from'./src/screens/Home';
+import { Routes  } from'./src/routes';
 import { StatusBar } from 'react-native';
 
 export default function App(){
@@ -21,14 +21,14 @@ export default function App(){
   }
   return(
     //<fragment>, igual uma view para que se possa usar mais de um elemento no return
-    
     <Background>
-    <StatusBar
+     <StatusBar
     barStyle="light-content"
     backgroundColor="transparent"
     translucent
     />
-    <Home />
-    </Background>
+    <Routes />
+     </Background>    
+   
   );
 }
